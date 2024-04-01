@@ -1,4 +1,17 @@
 .App {
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.counter,
+.settings {
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -52,8 +65,30 @@
     border-radius: 5px;
 }
 
-h1 {
+.settings-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h3 {
+    margin: 0;
+    padding: 20px 20px;
     font-size: 50px;
     text-shadow: 5px 5px 5px #313131;
+}
 
+h3 {
+    padding: 12px 20px;
+    font-size: 20px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: deepskyblue;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    margin-left: 30px;
+    width: 200px;
 }
